@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.table{
+    width: 100%;
+    
+}
+.table_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(130, 125, 125);
+
+}
+.table_header p{
+    color: rgb(54, 45, 45);
+}
+.add_new{
+    padding: 10px 20px;
+    color: aliceblue;
+    background-color: blueviolet;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 10px;
+    color: rgb(12, 12, 12);
+    
+}
+input{
+    padding: 10px 20px;
+    margin: 0 10px;
+    outline: none;
+    border: 1px solid blue;
+    border-radius: 6px;
+    color: blue;
+}
+::placeholder{
+    color: blue
+}
+.table_section{
+    height:630px;
+    overflow: auto;
+
+}
+table{
+    width: 100%;
+    table-layout: fixed;
+    min-width: 900px;
+    border-collapse: collapse;
+}
+thead th{
+    position: sticky;
+    top: 0;
+    background-color: rgb(148, 150, 150);
+    color: rgb(86, 85, 85);
+    font-size: 15px;
+
+}
+th, td{
+    border-bottom: 1px solid rgb(103, 63, 63);
+    padding: 10px 20px;
+    word-break: break-all;
+    text-align: center;
+}
+td img{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 15px;
+    border:5px solid rgb(225, 35, 165);
+}
+tr:hover td{
+    color: rgb(38, 44, 44);
+    cursor: pointer;
+    background-color: rgb(209, 233, 225);
+}
+td button:nth-child(1){
+    background-color: rgb(175, 175, 236);
+}
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track{
+    box-shadow: rgb(184, 132, 132);
+
+}
+::-webkit-scrollbar-thumb{
+    box-shadow: rgb(134, 9, 9);
+}
+.pagination{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding: 10px 20px;
+    background: rgb(99, 98, 98);
+}
+.pagination div{
+    padding: 10px;
+    border: 2px solid whitesmoke;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(144, 144, 234);
+    color: antiquewhite;
+    box-shadow: 0px 0px 4px 0px rgb(45, 42, 42);
+    margin: 0.5px;
+}
